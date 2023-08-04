@@ -79,6 +79,6 @@ mod tests {
         pathtrace.push(trace);
         pathtrace.push(trace_delta);
 
-        println!("{pathtrace:?}");
+        assert!(pathtrace.head.is_some())
     }
 }
